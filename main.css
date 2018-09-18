@@ -1,0 +1,59 @@
+html {
+  margin: 0px;
+}
+
+
+body {
+  margin: 0;
+  margin-right: 12px;
+  overflow: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  padding: 10vw;
+  box-sizing: border-box;
+  background: #f2d2ff44;
+}
+
+.timeline_box {
+  height: calc(100% - 34px);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.timeline_box ul {
+  padding: 0;
+  margin: 0;
+}
+
+.timeline_box li {
+  margin-bottom: 8px;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.timeline_box li:last-child {
+  margin-bottom: 0px;
+}
+
+.timeline_box .name {
+  font-weight: 800;
+}
+
+.head, .foot {
+  height: 14px;
+  margin: 0px 0 10px 0;
+  background: rgba(0,0,0,0.1);
+  -webkit-app-region: drag;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #666; 
+}

@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TwitChat</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+<body>
+  
+
+  <!-- CONTENT -->
+  <div class="head clickable"></div>
+  <div class="content">
+      <div class="timeline_box clickable">
+          <ul></ul>
+      </div>
+  </div>
+
+  
+
+  <!-- ELECTRON-TRANSPARENCY-MOUSE-FIX -->
+  <!-- Placing the script here for readability; don't forget DOMContentLoaded event when placed in <head>! -->
+  <script>
+
+    let path = require('path')
+    let timeline_box = document.querySelector('.timeline_box')
+
+    const TransparencyMouseFix = require(path.join(__dirname, 'electron-transparency-mouse-fix.js'))
+    const transparencyMouseFix = new TransparencyMouseFix({
+      mode: 'whitelist',
+      whiteListSelectors: ['.clickable'],
+      log: (...msg)=>{console.debug('%cTMF%c', 'font-weight: bold', '', ...msg)}
+    })
+  </script>
+
+
+</body>
+</html>

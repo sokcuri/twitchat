@@ -1,0 +1,21 @@
+{
+  "name": "twitchat",
+  "version": "0.0.1",
+  "description": "A minimal twitter application",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/sokcuri/twitchat",
+  "keywords": [
+    "Twitter",
+    "chat"
+  ],
+  "author": "Sokcuri",
+  "devDependencies": {
+    "electron": "^2.0.9"
+  },
+  "dependencies": {
+    "electron-window-state": "^5.0.1"
+  }
+}
