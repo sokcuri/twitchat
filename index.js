@@ -27,8 +27,8 @@ app.on('ready', () => setTimeout(() => {
 
     win.loadFile('main.html')
     win.setAlwaysOnTop(true)
-    win.toggleDevTools()
-    
+    //win.toggleDevTools()
+
     mainWindowState.manage(win);
     
     let td_win = new BrowserWindow({
