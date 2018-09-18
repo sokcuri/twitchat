@@ -4,3 +4,4 @@
 
 # Run
 `npm start`
+*First, Login to TweetDeck (Second Window. When app started, window minimized)
