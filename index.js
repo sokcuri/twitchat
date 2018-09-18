@@ -35,8 +35,7 @@ app.on('ready', () => setTimeout(() => {
         width: 800,
         height: 600,
         webPreferences: {
-            preload: path.join(__dirname, 'preload', 'td_win.js'),
-            nodeIntegration: false
+            preload: path.join(__dirname, 'preload', 'td_win.js')
         }
     })
 
